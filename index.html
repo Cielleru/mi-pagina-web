@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecta Mood | Tienda Eco Friendly</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7fdf6;
+      color: #3b4d3c;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #dcebd2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3b4d3c;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ad7e57;
+    }
+
+    /* Hero / Bienvenida */
+    .hero {
+      text-align: center;
+      background: linear-gradient(to bottom right, #e3f3db, #f3f9ec);
+      padding: 80px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #2f4233;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      color: #5a6b55;
+    }
+
+    /* Sección de productos */
+    .productos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px 20px;
+    }
+
+    .producto {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 240px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-8px);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .producto p {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .producto button {
+      background-color: #e8d8c4;
+      color: #3b4d3c;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .producto button:hover {
+      background-color: #d8bfa5;
+    }
+
+    /* Video informativo */
+    .video {
+      background-color: #f1f7ee;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .video h2 {
+      margin-bottom: 20px;
+      color: #3e543b;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 380px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Contacto */
+    .contacto {
+      background-color: #e2f0e1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contacto p {
+      margin: 6px 0;
+      font-size: 1.1em;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #d4e7d1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #3b4d3c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <img src="unnamed (1).jpg" alt="Logo Selecta Mood" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">¿Quiénes somos?</a></li>
+        <li><a href="#">Contenido</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Selecta Mood</h1>
+    <p>Un espacio para vivir en armonía con el planeta 🌎</p>
+  </section>
+
+  <!-- Productos -->
+  <section>
+    <h2 style="text-align:center; font-size:2em; color:#435e46;">Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="cepillo_eco_flores_colorneutro-scaled.jpeg" alt="Cepillo de bambú">
+        <p>Cepillo dental de bambú</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="92882_amb-a.jpg" alt="Bolsas reutilizables">
+        <p>Set de bolsas reutilizables</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="f2d63cd211b09def89e168bf4601a291.jpg" alt="Jabón natural">
+        <p>Jabón artesanal natural</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="OIP (1).jpg" alt="Termo ecológico">
+        <p>Termo ecológico de acero</p>
+        <button>Añadir al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/mood.selecta/" target="_blank">@mood.selecta</a></p>
+  </footer>
+
+</body>
+</html>
